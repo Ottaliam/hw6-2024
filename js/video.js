@@ -10,6 +10,7 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", () => {
 	video.play();
+	document.querySelector("#volume").textContent = `${document.querySelector("#slider").value}%`;
 	console.log("Play video");
 });
 
